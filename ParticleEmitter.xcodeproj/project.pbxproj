@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E41045EA18DA08C500B111C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41045E918DA08C500B111C0 /* Foundation.framework */; };
+		E41045EC18DA08C500B111C0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41045EB18DA08C500B111C0 /* CoreGraphics.framework */; };
+		E41045EE18DA08C500B111C0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41045ED18DA08C500B111C0 /* UIKit.framework */; };
+		E41045F418DA08C500B111C0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E41045F218DA08C500B111C0 /* InfoPlist.strings */; };
+		E41045F618DA08C500B111C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E41045F518DA08C500B111C0 /* main.m */; };
+		E41045FA18DA08C500B111C0 /* TCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E41045F918DA08C500B111C0 /* TCAppDelegate.m */; };
+		E41045FC18DA08C500B111C0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E41045FB18DA08C500B111C0 /* Images.xcassets */; };
+		E410460318DA08C500B111C0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E410460218DA08C500B111C0 /* XCTest.framework */; };
+		E410460418DA08C500B111C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41045E918DA08C500B111C0 /* Foundation.framework */; };
+		E410460518DA08C500B111C0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41045ED18DA08C500B111C0 /* UIKit.framework */; };
+		E410460D18DA08C500B111C0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E410460B18DA08C500B111C0 /* InfoPlist.strings */; };
+		E410460F18DA08C500B111C0 /* ParticleEmitterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E410460E18DA08C500B111C0 /* ParticleEmitterTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E410460618DA08C500B111C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E41045DE18DA08C500B111C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E41045E518DA08C500B111C0;
+			remoteInfo = ParticleEmitter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E41045E618DA08C500B111C0 /* ParticleEmitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParticleEmitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E41045E918DA08C500B111C0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E41045EB18DA08C500B111C0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E41045ED18DA08C500B111C0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E41045F118DA08C500B111C0 /* ParticleEmitter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ParticleEmitter-Info.plist"; sourceTree = "<group>"; };
+		E41045F318DA08C500B111C0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E41045F518DA08C500B111C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E41045F718DA08C500B111C0 /* ParticleEmitter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ParticleEmitter-Prefix.pch"; sourceTree = "<group>"; };
+		E41045F818DA08C500B111C0 /* TCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCAppDelegate.h; sourceTree = "<group>"; };
+		E41045F918DA08C500B111C0 /* TCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCAppDelegate.m; sourceTree = "<group>"; };
+		E41045FB18DA08C500B111C0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E410460118DA08C500B111C0 /* ParticleEmitterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParticleEmitterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E410460218DA08C500B111C0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E410460A18DA08C500B111C0 /* ParticleEmitterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ParticleEmitterTests-Info.plist"; sourceTree = "<group>"; };
+		E410460C18DA08C500B111C0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E410460E18DA08C500B111C0 /* ParticleEmitterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParticleEmitterTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E41045E318DA08C500B111C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E41045EC18DA08C500B111C0 /* CoreGraphics.framework in Frameworks */,
+				E41045EE18DA08C500B111C0 /* UIKit.framework in Frameworks */,
+				E41045EA18DA08C500B111C0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E41045FE18DA08C500B111C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E410460318DA08C500B111C0 /* XCTest.framework in Frameworks */,
+				E410460518DA08C500B111C0 /* UIKit.framework in Frameworks */,
+				E410460418DA08C500B111C0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E41045DD18DA08C500B111C0 = {
+			isa = PBXGroup;
+			children = (
+				E41045EF18DA08C500B111C0 /* ParticleEmitter */,
+				E410460818DA08C500B111C0 /* ParticleEmitterTests */,
+				E41045E818DA08C500B111C0 /* Frameworks */,
+				E41045E718DA08C500B111C0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E41045E718DA08C500B111C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E41045E618DA08C500B111C0 /* ParticleEmitter.app */,
+				E410460118DA08C500B111C0 /* ParticleEmitterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E41045E818DA08C500B111C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E41045E918DA08C500B111C0 /* Foundation.framework */,
+				E41045EB18DA08C500B111C0 /* CoreGraphics.framework */,
+				E41045ED18DA08C500B111C0 /* UIKit.framework */,
+				E410460218DA08C500B111C0 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E41045EF18DA08C500B111C0 /* ParticleEmitter */ = {
+			isa = PBXGroup;
+			children = (
+				E41045F818DA08C500B111C0 /* TCAppDelegate.h */,
+				E41045F918DA08C500B111C0 /* TCAppDelegate.m */,
+				E41045FB18DA08C500B111C0 /* Images.xcassets */,
+				E41045F018DA08C500B111C0 /* Supporting Files */,
+			);
+			path = ParticleEmitter;
+			sourceTree = "<group>";
+		};
+		E41045F018DA08C500B111C0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E41045F118DA08C500B111C0 /* ParticleEmitter-Info.plist */,
+				E41045F218DA08C500B111C0 /* InfoPlist.strings */,
+				E41045F518DA08C500B111C0 /* main.m */,
+				E41045F718DA08C500B111C0 /* ParticleEmitter-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E410460818DA08C500B111C0 /* ParticleEmitterTests */ = {
+			isa = PBXGroup;
+			children = (
+				E410460E18DA08C500B111C0 /* ParticleEmitterTests.m */,
+				E410460918DA08C500B111C0 /* Supporting Files */,
+			);
+			path = ParticleEmitterTests;
+			sourceTree = "<group>";
+		};
+		E410460918DA08C500B111C0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E410460A18DA08C500B111C0 /* ParticleEmitterTests-Info.plist */,
+				E410460B18DA08C500B111C0 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E41045E518DA08C500B111C0 /* ParticleEmitter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E410461218DA08C500B111C0 /* Build configuration list for PBXNativeTarget "ParticleEmitter" */;
+			buildPhases = (
+				E41045E218DA08C500B111C0 /* Sources */,
+				E41045E318DA08C500B111C0 /* Frameworks */,
+				E41045E418DA08C500B111C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ParticleEmitter;
+			productName = ParticleEmitter;
+			productReference = E41045E618DA08C500B111C0 /* ParticleEmitter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E410460018DA08C500B111C0 /* ParticleEmitterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E410461518DA08C500B111C0 /* Build configuration list for PBXNativeTarget "ParticleEmitterTests" */;
+			buildPhases = (
+				E41045FD18DA08C500B111C0 /* Sources */,
+				E41045FE18DA08C500B111C0 /* Frameworks */,
+				E41045FF18DA08C500B111C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E410460718DA08C500B111C0 /* PBXTargetDependency */,
+			);
+			name = ParticleEmitterTests;
+			productName = ParticleEmitterTests;
+			productReference = E410460118DA08C500B111C0 /* ParticleEmitterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E41045DE18DA08C500B111C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TC;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = theo;
+				TargetAttributes = {
+					E410460018DA08C500B111C0 = {
+						TestTargetID = E41045E518DA08C500B111C0;
+					};
+				};
+			};
+			buildConfigurationList = E41045E118DA08C500B111C0 /* Build configuration list for PBXProject "ParticleEmitter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E41045DD18DA08C500B111C0;
+			productRefGroup = E41045E718DA08C500B111C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E41045E518DA08C500B111C0 /* ParticleEmitter */,
+				E410460018DA08C500B111C0 /* ParticleEmitterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E41045E418DA08C500B111C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E41045F418DA08C500B111C0 /* InfoPlist.strings in Resources */,
+				E41045FC18DA08C500B111C0 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E41045FF18DA08C500B111C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E410460D18DA08C500B111C0 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E41045E218DA08C500B111C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E41045F618DA08C500B111C0 /* main.m in Sources */,
+				E41045FA18DA08C500B111C0 /* TCAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E41045FD18DA08C500B111C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E410460F18DA08C500B111C0 /* ParticleEmitterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E410460718DA08C500B111C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E41045E518DA08C500B111C0 /* ParticleEmitter */;
+			targetProxy = E410460618DA08C500B111C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E41045F218DA08C500B111C0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E41045F318DA08C500B111C0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E410460B18DA08C500B111C0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E410460C18DA08C500B111C0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E410461018DA08C500B111C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E410461118DA08C500B111C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E410461318DA08C500B111C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ParticleEmitter/ParticleEmitter-Prefix.pch";
+				INFOPLIST_FILE = "ParticleEmitter/ParticleEmitter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E410461418DA08C500B111C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ParticleEmitter/ParticleEmitter-Prefix.pch";
+				INFOPLIST_FILE = "ParticleEmitter/ParticleEmitter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E410461618DA08C500B111C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ParticleEmitter.app/ParticleEmitter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ParticleEmitter/ParticleEmitter-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ParticleEmitterTests/ParticleEmitterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		E410461718DA08C500B111C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ParticleEmitter.app/ParticleEmitter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ParticleEmitter/ParticleEmitter-Prefix.pch";
+				INFOPLIST_FILE = "ParticleEmitterTests/ParticleEmitterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E41045E118DA08C500B111C0 /* Build configuration list for PBXProject "ParticleEmitter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E410461018DA08C500B111C0 /* Debug */,
+				E410461118DA08C500B111C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E410461218DA08C500B111C0 /* Build configuration list for PBXNativeTarget "ParticleEmitter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E410461318DA08C500B111C0 /* Debug */,
+				E410461418DA08C500B111C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E410461518DA08C500B111C0 /* Build configuration list for PBXNativeTarget "ParticleEmitterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E410461618DA08C500B111C0 /* Debug */,
+				E410461718DA08C500B111C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E41045DE18DA08C500B111C0 /* Project object */;
+}
