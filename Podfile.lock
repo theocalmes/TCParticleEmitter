@@ -1,0 +1,14 @@
+PODS:
+  - TCPixelReader (0.0.1)
+
+DEPENDENCIES:
+  - TCPixelReader (from `git@github.com:theocalmes/TCPixelReader.git`)
+
+EXTERNAL SOURCES:
+  TCPixelReader:
+    :git: git@github.com:theocalmes/TCPixelReader.git
+
+SPEC CHECKSUMS:
+  TCPixelReader: 57c80c30cccdd6c729eae611fbdbe264b7ba2c30
+
+COCOAPODS: 0.29.0

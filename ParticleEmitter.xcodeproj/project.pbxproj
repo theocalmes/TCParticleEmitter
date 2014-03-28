@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		111954C6A9734517B1248EDB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82DA536BBC5242FC9112ACD0 /* libPods.a */; };
 		E41045EA18DA08C500B111C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41045E918DA08C500B111C0 /* Foundation.framework */; };
 		E41045EC18DA08C500B111C0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41045EB18DA08C500B111C0 /* CoreGraphics.framework */; };
 		E41045EE18DA08C500B111C0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41045ED18DA08C500B111C0 /* UIKit.framework */; };
@@ -19,6 +20,19 @@
 		E410460518DA08C500B111C0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41045ED18DA08C500B111C0 /* UIKit.framework */; };
 		E410460D18DA08C500B111C0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E410460B18DA08C500B111C0 /* InfoPlist.strings */; };
 		E410460F18DA08C500B111C0 /* ParticleEmitterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E410460E18DA08C500B111C0 /* ParticleEmitterTests.m */; };
+		E410461A18DA08D800B111C0 /* TCParticle.m in Sources */ = {isa = PBXBuildFile; fileRef = E410461918DA08D800B111C0 /* TCParticle.m */; };
+		E410462018DA0A8400B111C0 /* TCPointAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E410461F18DA0A8400B111C0 /* TCPointAdditions.m */; };
+		E410462318DA34E600B111C0 /* TCParticleEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = E410462218DA34E600B111C0 /* TCParticleEmitter.m */; };
+		E410462A18DA3CD400B111C0 /* TCGravityField.m in Sources */ = {isa = PBXBuildFile; fileRef = E410462918DA3CD400B111C0 /* TCGravityField.m */; };
+		E4481F1C18E0DC5F00B84F52 /* TCGravityEmitterView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4481F1B18E0DC5F00B84F52 /* TCGravityEmitterView.m */; };
+		E46F196A18DB698000A2161A /* TCPressureField.m in Sources */ = {isa = PBXBuildFile; fileRef = E46F196918DB698000A2161A /* TCPressureField.m */; };
+		E46F197118DB90A400A2161A /* underwater_field.png in Resources */ = {isa = PBXBuildFile; fileRef = E46F197018DB90A400A2161A /* underwater_field.png */; };
+		E473428118DCD26B0072BA53 /* Circumventure-Sprits.png in Resources */ = {isa = PBXBuildFile; fileRef = E473428018DCD26B0072BA53 /* Circumventure-Sprits.png */; };
+		E473428718DCD36E0072BA53 /* TCBubbleEmitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E473428618DCD36E0072BA53 /* TCBubbleEmitterViewController.m */; };
+		E473428A18DCE1740072BA53 /* TCUnderwaterField.m in Sources */ = {isa = PBXBuildFile; fileRef = E473428918DCE1740072BA53 /* TCUnderwaterField.m */; };
+		E49335E718E34500001672E1 /* TCImagePressureFieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = E49335E618E34500001672E1 /* TCImagePressureFieldView.m */; };
+		E49335EC18E3496B001672E1 /* TCImageFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E49335EB18E3496B001672E1 /* TCImageFieldViewController.m */; };
+		E49335FF18E3575C001672E1 /* TCGravityEmitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E49335FE18E3575C001672E1 /* TCGravityEmitterViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		82DA536BBC5242FC9112ACD0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C41649AA84184D7FBC82934C /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		E41045E618DA08C500B111C0 /* ParticleEmitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParticleEmitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E41045E918DA08C500B111C0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E41045EB18DA08C500B111C0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,6 +64,31 @@
 		E410460A18DA08C500B111C0 /* ParticleEmitterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ParticleEmitterTests-Info.plist"; sourceTree = "<group>"; };
 		E410460C18DA08C500B111C0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E410460E18DA08C500B111C0 /* ParticleEmitterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParticleEmitterTests.m; sourceTree = "<group>"; };
+		E410461818DA08D800B111C0 /* TCParticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCParticle.h; sourceTree = "<group>"; };
+		E410461918DA08D800B111C0 /* TCParticle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCParticle.m; sourceTree = "<group>"; };
+		E410461E18DA0A8400B111C0 /* TCPointAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPointAdditions.h; sourceTree = "<group>"; };
+		E410461F18DA0A8400B111C0 /* TCPointAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPointAdditions.m; sourceTree = "<group>"; };
+		E410462118DA34E600B111C0 /* TCParticleEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCParticleEmitter.h; sourceTree = "<group>"; };
+		E410462218DA34E600B111C0 /* TCParticleEmitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCParticleEmitter.m; sourceTree = "<group>"; };
+		E410462718DA3ABF00B111C0 /* TCField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCField.h; sourceTree = "<group>"; };
+		E410462818DA3CD400B111C0 /* TCGravityField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCGravityField.h; sourceTree = "<group>"; };
+		E410462918DA3CD400B111C0 /* TCGravityField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCGravityField.m; sourceTree = "<group>"; };
+		E4481F1A18E0DC5F00B84F52 /* TCGravityEmitterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCGravityEmitterView.h; sourceTree = "<group>"; };
+		E4481F1B18E0DC5F00B84F52 /* TCGravityEmitterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCGravityEmitterView.m; sourceTree = "<group>"; };
+		E46F196818DB698000A2161A /* TCPressureField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPressureField.h; sourceTree = "<group>"; };
+		E46F196918DB698000A2161A /* TCPressureField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPressureField.m; sourceTree = "<group>"; };
+		E46F197018DB90A400A2161A /* underwater_field.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = underwater_field.png; sourceTree = "<group>"; };
+		E473428018DCD26B0072BA53 /* Circumventure-Sprits.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Circumventure-Sprits.png"; sourceTree = "<group>"; };
+		E473428518DCD36E0072BA53 /* TCBubbleEmitterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCBubbleEmitterViewController.h; sourceTree = "<group>"; };
+		E473428618DCD36E0072BA53 /* TCBubbleEmitterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCBubbleEmitterViewController.m; sourceTree = "<group>"; };
+		E473428818DCE1740072BA53 /* TCUnderwaterField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCUnderwaterField.h; sourceTree = "<group>"; };
+		E473428918DCE1740072BA53 /* TCUnderwaterField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCUnderwaterField.m; sourceTree = "<group>"; };
+		E49335E518E34500001672E1 /* TCImagePressureFieldView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCImagePressureFieldView.h; sourceTree = "<group>"; };
+		E49335E618E34500001672E1 /* TCImagePressureFieldView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCImagePressureFieldView.m; sourceTree = "<group>"; };
+		E49335EA18E3496B001672E1 /* TCImageFieldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCImageFieldViewController.h; sourceTree = "<group>"; };
+		E49335EB18E3496B001672E1 /* TCImageFieldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCImageFieldViewController.m; sourceTree = "<group>"; };
+		E49335FD18E3575C001672E1 /* TCGravityEmitterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCGravityEmitterViewController.h; sourceTree = "<group>"; };
+		E49335FE18E3575C001672E1 /* TCGravityEmitterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCGravityEmitterViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +99,7 @@
 				E41045EC18DA08C500B111C0 /* CoreGraphics.framework in Frameworks */,
 				E41045EE18DA08C500B111C0 /* UIKit.framework in Frameworks */,
 				E41045EA18DA08C500B111C0 /* Foundation.framework in Frameworks */,
+				111954C6A9734517B1248EDB /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +123,7 @@
 				E410460818DA08C500B111C0 /* ParticleEmitterTests */,
 				E41045E818DA08C500B111C0 /* Frameworks */,
 				E41045E718DA08C500B111C0 /* Products */,
+				C41649AA84184D7FBC82934C /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +143,7 @@
 				E41045EB18DA08C500B111C0 /* CoreGraphics.framework */,
 				E41045ED18DA08C500B111C0 /* UIKit.framework */,
 				E410460218DA08C500B111C0 /* XCTest.framework */,
+				82DA536BBC5242FC9112ACD0 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -107,9 +151,16 @@
 		E41045EF18DA08C500B111C0 /* ParticleEmitter */ = {
 			isa = PBXGroup;
 			children = (
+				E4481F1918E0DC4D00B84F52 /* Views */,
+				E448889C18E0A8BE00DB805D /* View Controllers */,
+				E448889B18E0A8AB00DB805D /* Emitter */,
+				E448889A18E0A89900DB805D /* Helpers */,
+				E448889918E0A82100DB805D /* Fields */,
 				E41045F818DA08C500B111C0 /* TCAppDelegate.h */,
 				E41045F918DA08C500B111C0 /* TCAppDelegate.m */,
 				E41045FB18DA08C500B111C0 /* Images.xcassets */,
+				E46F197018DB90A400A2161A /* underwater_field.png */,
+				E473428018DCD26B0072BA53 /* Circumventure-Sprits.png */,
 				E41045F018DA08C500B111C0 /* Supporting Files */,
 			);
 			path = ParticleEmitter;
@@ -144,6 +195,64 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E4481F1918E0DC4D00B84F52 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E4481F1A18E0DC5F00B84F52 /* TCGravityEmitterView.h */,
+				E4481F1B18E0DC5F00B84F52 /* TCGravityEmitterView.m */,
+				E49335E518E34500001672E1 /* TCImagePressureFieldView.h */,
+				E49335E618E34500001672E1 /* TCImagePressureFieldView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		E448889918E0A82100DB805D /* Fields */ = {
+			isa = PBXGroup;
+			children = (
+				E473428818DCE1740072BA53 /* TCUnderwaterField.h */,
+				E473428918DCE1740072BA53 /* TCUnderwaterField.m */,
+				E46F196818DB698000A2161A /* TCPressureField.h */,
+				E46F196918DB698000A2161A /* TCPressureField.m */,
+				E410462818DA3CD400B111C0 /* TCGravityField.h */,
+				E410462918DA3CD400B111C0 /* TCGravityField.m */,
+			);
+			name = Fields;
+			sourceTree = "<group>";
+		};
+		E448889A18E0A89900DB805D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E410461E18DA0A8400B111C0 /* TCPointAdditions.h */,
+				E410461F18DA0A8400B111C0 /* TCPointAdditions.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		E448889B18E0A8AB00DB805D /* Emitter */ = {
+			isa = PBXGroup;
+			children = (
+				E410462718DA3ABF00B111C0 /* TCField.h */,
+				E410461818DA08D800B111C0 /* TCParticle.h */,
+				E410461918DA08D800B111C0 /* TCParticle.m */,
+				E410462118DA34E600B111C0 /* TCParticleEmitter.h */,
+				E410462218DA34E600B111C0 /* TCParticleEmitter.m */,
+			);
+			name = Emitter;
+			sourceTree = "<group>";
+		};
+		E448889C18E0A8BE00DB805D /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E473428518DCD36E0072BA53 /* TCBubbleEmitterViewController.h */,
+				E473428618DCD36E0072BA53 /* TCBubbleEmitterViewController.m */,
+				E49335EA18E3496B001672E1 /* TCImageFieldViewController.h */,
+				E49335EB18E3496B001672E1 /* TCImageFieldViewController.m */,
+				E49335FD18E3575C001672E1 /* TCGravityEmitterViewController.h */,
+				E49335FE18E3575C001672E1 /* TCGravityEmitterViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,9 +260,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E410461218DA08C500B111C0 /* Build configuration list for PBXNativeTarget "ParticleEmitter" */;
 			buildPhases = (
+				31B574997D544E2E8759D709 /* Check Pods Manifest.lock */,
 				E41045E218DA08C500B111C0 /* Sources */,
 				E41045E318DA08C500B111C0 /* Frameworks */,
 				E41045E418DA08C500B111C0 /* Resources */,
+				A101E10445844D54A8F66FA3 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -221,6 +332,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E41045F418DA08C500B111C0 /* InfoPlist.strings in Resources */,
+				E473428118DCD26B0072BA53 /* Circumventure-Sprits.png in Resources */,
+				E46F197118DB90A400A2161A /* underwater_field.png in Resources */,
 				E41045FC18DA08C500B111C0 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,13 +348,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		31B574997D544E2E8759D709 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A101E10445844D54A8F66FA3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E41045E218DA08C500B111C0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E473428718DCD36E0072BA53 /* TCBubbleEmitterViewController.m in Sources */,
+				E46F196A18DB698000A2161A /* TCPressureField.m in Sources */,
+				E410461A18DA08D800B111C0 /* TCParticle.m in Sources */,
+				E49335EC18E3496B001672E1 /* TCImageFieldViewController.m in Sources */,
+				E410462018DA0A8400B111C0 /* TCPointAdditions.m in Sources */,
+				E473428A18DCE1740072BA53 /* TCUnderwaterField.m in Sources */,
 				E41045F618DA08C500B111C0 /* main.m in Sources */,
+				E410462318DA34E600B111C0 /* TCParticleEmitter.m in Sources */,
+				E49335FF18E3575C001672E1 /* TCGravityEmitterViewController.m in Sources */,
+				E410462A18DA3CD400B111C0 /* TCGravityField.m in Sources */,
+				E4481F1C18E0DC5F00B84F52 /* TCGravityEmitterView.m in Sources */,
 				E41045FA18DA08C500B111C0 /* TCAppDelegate.m in Sources */,
+				E49335E718E34500001672E1 /* TCImagePressureFieldView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +516,7 @@
 		};
 		E410461318DA08C500B111C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C41649AA84184D7FBC82934C /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -372,6 +530,7 @@
 		};
 		E410461418DA08C500B111C0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C41649AA84184D7FBC82934C /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -444,6 +603,7 @@
 				E410461418DA08C500B111C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E410461518DA08C500B111C0 /* Build configuration list for PBXNativeTarget "ParticleEmitterTests" */ = {
 			isa = XCConfigurationList;
@@ -452,6 +612,7 @@
 				E410461718DA08C500B111C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

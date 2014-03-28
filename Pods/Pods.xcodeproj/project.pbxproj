@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3392874232BA4A28A223263A /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C1039263E10B4E6E8CEC837A /* Pods-dummy.m */; };
+		376A87A8834647E2A6390860 /* TCPixelReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFE7A4DA5FC4DB08894D925 /* TCPixelReader.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		3D145E21A9BD42998EAC28C5 /* TCPixelReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B026AA8B80E46A18E100646 /* TCPixelReader.h */; };
+		6EFD32C750F049DA92435D26 /* libPods-TCPixelReader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 343B03C0303F46F98EC6ACA0 /* libPods-TCPixelReader.a */; };
+		857C05138BED4525AF006210 /* Pods-TCPixelReader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D0363F57394776BEB6099D /* Pods-TCPixelReader-dummy.m */; };
+		A95BEFB0DDE047959B50DDF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C33DF1318F8B4298B99C0A73 /* Foundation.framework */; };
+		B229877023D2410488F25B0F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C33DF1318F8B4298B99C0A73 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CCC21A6913304BAF8353F443 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2518CD7BD7614A5684EBC403 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AFFDFB5638B44BB8654192B;
+			remoteInfo = "Pods-TCPixelReader";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E682EAB4E7F44A192AD71BF /* Pods-TCPixelReader-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TCPixelReader-Private.xcconfig"; sourceTree = "<group>"; };
+		2B33F10BA96E4DEDB40F1B08 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2EF174A6CBBB4D529D31B71F /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		343B03C0303F46F98EC6ACA0 /* libPods-TCPixelReader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TCPixelReader.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B026AA8B80E46A18E100646 /* TCPixelReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TCPixelReader.h; path = TCPixelReader/TCPixelReader.h; sourceTree = "<group>"; };
+		417ECCDE853146988819625B /* Pods-TCPixelReader-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TCPixelReader-prefix.pch"; sourceTree = "<group>"; };
+		4FE591C2E95B4030B5360D80 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B4037EF4B4B416885A719D4 /* Pods-TCPixelReader.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TCPixelReader.xcconfig"; sourceTree = "<group>"; };
+		7BFE7A4DA5FC4DB08894D925 /* TCPixelReader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TCPixelReader.m; path = TCPixelReader/TCPixelReader.m; sourceTree = "<group>"; };
+		9ECBEF0780AC43438110556E /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		A5111B55201E48ECBACE3165 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C1039263E10B4E6E8CEC837A /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		C33DF1318F8B4298B99C0A73 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CB06556F843749C384CA7C72 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.xcconfig; sourceTree = "<group>"; };
+		DA200318B9864A02B30E9E27 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		E7D0363F57394776BEB6099D /* Pods-TCPixelReader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TCPixelReader-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11B006337AA949C08E06B66F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B229877023D2410488F25B0F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B9A86FBB1844FE398A87562 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A95BEFB0DDE047959B50DDF7 /* Foundation.framework in Frameworks */,
+				6EFD32C750F049DA92435D26 /* libPods-TCPixelReader.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3014B188D8E84EBA81971AF4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5B4037EF4B4B416885A719D4 /* Pods-TCPixelReader.xcconfig */,
+				0E682EAB4E7F44A192AD71BF /* Pods-TCPixelReader-Private.xcconfig */,
+				E7D0363F57394776BEB6099D /* Pods-TCPixelReader-dummy.m */,
+				417ECCDE853146988819625B /* Pods-TCPixelReader-prefix.pch */,
+			);
+			name = "Support Files";
+			sourceTree = SOURCE_ROOT;
+		};
+		576B41B47B404BA7B992B7E3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DF0326CB860B4429AB555857 /* TCPixelReader */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		80B5CE444FFB4EF6BB57F40C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				94ABAF571A64445C8D21900F /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		8E1D47DCCAF246529167F099 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4AEAE9AA3A446C887954313 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		94ABAF571A64445C8D21900F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB06556F843749C384CA7C72 /* Pods.xcconfig */,
+				2B33F10BA96E4DEDB40F1B08 /* Pods-acknowledgements.markdown */,
+				DA200318B9864A02B30E9E27 /* Pods-acknowledgements.plist */,
+				C1039263E10B4E6E8CEC837A /* Pods-dummy.m */,
+				9ECBEF0780AC43438110556E /* Pods-environment.h */,
+				2EF174A6CBBB4D529D31B71F /* Pods-resources.sh */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CC1B16B4362B4851AB7A7B36 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4FE591C2E95B4030B5360D80 /* libPods.a */,
+				343B03C0303F46F98EC6ACA0 /* libPods-TCPixelReader.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D4AEAE9AA3A446C887954313 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C33DF1318F8B4298B99C0A73 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		DF0326CB860B4429AB555857 /* TCPixelReader */ = {
+			isa = PBXGroup;
+			children = (
+				3B026AA8B80E46A18E100646 /* TCPixelReader.h */,
+				7BFE7A4DA5FC4DB08894D925 /* TCPixelReader.m */,
+				3014B188D8E84EBA81971AF4 /* Support Files */,
+			);
+			path = TCPixelReader;
+			sourceTree = "<group>";
+		};
+		F8CABC89279B468BAA76A909 = {
+			isa = PBXGroup;
+			children = (
+				A5111B55201E48ECBACE3165 /* Podfile */,
+				8E1D47DCCAF246529167F099 /* Frameworks */,
+				576B41B47B404BA7B992B7E3 /* Pods */,
+				CC1B16B4362B4851AB7A7B36 /* Products */,
+				80B5CE444FFB4EF6BB57F40C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		75FF8C2091D442CB8B1C7B3B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D145E21A9BD42998EAC28C5 /* TCPixelReader.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5CA8C6F718AB48DD89D9709F /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62677B01C1FE45A582147970 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				DC3CA471FF3C44A691D9735A /* Sources */,
+				8B9A86FBB1844FE398A87562 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6ED80141EEBA4077AB4D4A21 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 4FE591C2E95B4030B5360D80 /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9AFFDFB5638B44BB8654192B /* Pods-TCPixelReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFD85254E00F43C28218948E /* Build configuration list for PBXNativeTarget "Pods-TCPixelReader" */;
+			buildPhases = (
+				1DFCF57DEF004B389B5D65FD /* Sources */,
+				11B006337AA949C08E06B66F /* Frameworks */,
+				75FF8C2091D442CB8B1C7B3B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TCPixelReader";
+			productName = "Pods-TCPixelReader";
+			productReference = 343B03C0303F46F98EC6ACA0 /* libPods-TCPixelReader.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2518CD7BD7614A5684EBC403 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+			};
+			buildConfigurationList = CF77ED9C1D1648709EF11344 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F8CABC89279B468BAA76A909;
+			productRefGroup = CC1B16B4362B4851AB7A7B36 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5CA8C6F718AB48DD89D9709F /* Pods */,
+				9AFFDFB5638B44BB8654192B /* Pods-TCPixelReader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1DFCF57DEF004B389B5D65FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				857C05138BED4525AF006210 /* Pods-TCPixelReader-dummy.m in Sources */,
+				376A87A8834647E2A6390860 /* TCPixelReader.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC3CA471FF3C44A691D9735A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3392874232BA4A28A223263A /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6ED80141EEBA4077AB4D4A21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9AFFDFB5638B44BB8654192B /* Pods-TCPixelReader */;
+			targetProxy = CCC21A6913304BAF8353F443 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3AB664E6765B479EB940A8F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB06556F843749C384CA7C72 /* Pods.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6E204172A3214D029F0A08DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		882BCEAAC0D24466B36ACC2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E682EAB4E7F44A192AD71BF /* Pods-TCPixelReader-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pods-TCPixelReader-prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A82361EBEF534A67B399077B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E682EAB4E7F44A192AD71BF /* Pods-TCPixelReader-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pods-TCPixelReader-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A9672DA1FBAE42829AB68EBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		C0AE778E3D784E4BBA970FE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB06556F843749C384CA7C72 /* Pods.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		62677B01C1FE45A582147970 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AB664E6765B479EB940A8F3 /* Debug */,
+				C0AE778E3D784E4BBA970FE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF77ED9C1D1648709EF11344 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9672DA1FBAE42829AB68EBE /* Debug */,
+				6E204172A3214D029F0A08DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFD85254E00F43C28218948E /* Build configuration list for PBXNativeTarget "Pods-TCPixelReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A82361EBEF534A67B399077B /* Debug */,
+				882BCEAAC0D24466B36ACC2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2518CD7BD7614A5684EBC403 /* Project object */;
+}
