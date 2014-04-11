@@ -8,8 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-@class TCParticle;
-@protocol TCParticleEmitterDelegate;
+@class TCParticle, TCParticleEmitter;
+
+@protocol TCParticleEmitterDelegate <NSObject>
+
+- (void)particleEmitter:(TCParticleEmitter *)particleEmitter didEmittParticle:(TCParticle *)particle;
+- (void)particleEmitter:(TCParticleEmitter *)particleEmitter willRemoveParticle:(TCParticle *)particle;
+
+@end
 
 @interface TCParticleEmitter : NSObject
 
@@ -23,22 +29,20 @@
 @property NSTimeInterval particleLifeTime;
 @property NSTimeInterval particleLifeTimeSpread;
 
+@property CGFloat minOpacity;
+@property CGFloat opacitySpread;
+
+@property CGSize particleSize;
+@property CGFloat particleSizeSpread;
+
 @property CGPoint initialVelocity;
 @property CGPoint velocitySpread;
 
 @property CGPoint position;
 @property CGPoint positionSpread;
 
+@property (strong) CALayer *superLayer;
+
 - (void)updateEmitterWithTimeDelta:(NSTimeInterval)dt;
 
 @end
-
-@protocol TCParticleEmitterDelegate <NSObject>
-
-- (void)particleEmitter:(TCParticleEmitter *)emitter didCreateParticle:(TCParticle *)particle;
-- (void)particleEmitter:(TCParticleEmitter *)emitter willDestroyParticle:(TCParticle *)particle;
-
-@end
-
-float TCSpread(float spread);
-CGPoint TCSpreadPoint(CGPoint point);

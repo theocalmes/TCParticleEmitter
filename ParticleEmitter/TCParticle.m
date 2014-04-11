@@ -22,7 +22,6 @@
     if (self) {
         _velocity = CGPointZero;
         _acceleration = CGPointZero;
-        _position = CGPointZero;
         _timeAlive = 0;
         _lifetime = 10;
     }

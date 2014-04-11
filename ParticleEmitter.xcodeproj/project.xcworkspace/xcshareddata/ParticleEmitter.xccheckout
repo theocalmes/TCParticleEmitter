@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>72EABBD7-E1D9-49D9-8A67-A74083162FB3</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ParticleEmitter</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3B312601-F239-4266-8348-C2D1170684A4</key>
+		<string>ssh://github.com/theocalmes/TCParticleEmitter.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ParticleEmitter.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>3B312601-F239-4266-8348-C2D1170684A4</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/theocalmes/TCParticleEmitter.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>3B312601-F239-4266-8348-C2D1170684A4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3B312601-F239-4266-8348-C2D1170684A4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ParticleEmitter</string>
+		</dict>
+	</array>
+</dict>
+</plist>

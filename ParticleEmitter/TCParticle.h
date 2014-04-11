@@ -8,9 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface TCParticle : NSObject
+@interface TCParticle : CALayer
 
-@property CGPoint position;
 @property CGPoint velocity;
 @property CGPoint acceleration;
 @property NSTimeInterval lifetime;

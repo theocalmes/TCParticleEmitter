@@ -33,6 +33,8 @@
 		E49335E718E34500001672E1 /* TCImagePressureFieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = E49335E618E34500001672E1 /* TCImagePressureFieldView.m */; };
 		E49335EC18E3496B001672E1 /* TCImageFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E49335EB18E3496B001672E1 /* TCImageFieldViewController.m */; };
 		E49335FF18E3575C001672E1 /* TCGravityEmitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E49335FE18E3575C001672E1 /* TCGravityEmitterViewController.m */; };
+		E4FB606718E63B9600160346 /* TCBubbleParticle.m in Sources */ = {isa = PBXBuildFile; fileRef = E4FB606618E63B9600160346 /* TCBubbleParticle.m */; };
+		E4FB606B18E63C0C00160346 /* TCGravityParticle.m in Sources */ = {isa = PBXBuildFile; fileRef = E4FB606A18E63C0C00160346 /* TCGravityParticle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +91,10 @@
 		E49335EB18E3496B001672E1 /* TCImageFieldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCImageFieldViewController.m; sourceTree = "<group>"; };
 		E49335FD18E3575C001672E1 /* TCGravityEmitterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCGravityEmitterViewController.h; sourceTree = "<group>"; };
 		E49335FE18E3575C001672E1 /* TCGravityEmitterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCGravityEmitterViewController.m; sourceTree = "<group>"; };
+		E4FB606518E63B9600160346 /* TCBubbleParticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCBubbleParticle.h; sourceTree = "<group>"; };
+		E4FB606618E63B9600160346 /* TCBubbleParticle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCBubbleParticle.m; sourceTree = "<group>"; };
+		E4FB606918E63C0C00160346 /* TCGravityParticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCGravityParticle.h; sourceTree = "<group>"; };
+		E4FB606A18E63C0C00160346 /* TCGravityParticle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCGravityParticle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +157,7 @@
 		E41045EF18DA08C500B111C0 /* ParticleEmitter */ = {
 			isa = PBXGroup;
 			children = (
+				E4FB606818E63BF700160346 /* Particles */,
 				E4481F1918E0DC4D00B84F52 /* Views */,
 				E448889C18E0A8BE00DB805D /* View Controllers */,
 				E448889B18E0A8AB00DB805D /* Emitter */,
@@ -251,6 +258,17 @@
 				E49335FE18E3575C001672E1 /* TCGravityEmitterViewController.m */,
 			);
 			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		E4FB606818E63BF700160346 /* Particles */ = {
+			isa = PBXGroup;
+			children = (
+				E4FB606518E63B9600160346 /* TCBubbleParticle.h */,
+				E4FB606618E63B9600160346 /* TCBubbleParticle.m */,
+				E4FB606918E63C0C00160346 /* TCGravityParticle.h */,
+				E4FB606A18E63C0C00160346 /* TCGravityParticle.m */,
+			);
+			name = Particles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -394,6 +412,8 @@
 				E473428A18DCE1740072BA53 /* TCUnderwaterField.m in Sources */,
 				E41045F618DA08C500B111C0 /* main.m in Sources */,
 				E410462318DA34E600B111C0 /* TCParticleEmitter.m in Sources */,
+				E4FB606B18E63C0C00160346 /* TCGravityParticle.m in Sources */,
+				E4FB606718E63B9600160346 /* TCBubbleParticle.m in Sources */,
 				E49335FF18E3575C001672E1 /* TCGravityEmitterViewController.m in Sources */,
 				E410462A18DA3CD400B111C0 /* TCGravityField.m in Sources */,
 				E4481F1C18E0DC5F00B84F52 /* TCGravityEmitterView.m in Sources */,

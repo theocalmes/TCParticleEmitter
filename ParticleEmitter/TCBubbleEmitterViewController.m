@@ -123,11 +123,11 @@
 {
     [self.emitter updateEmitterWithTimeDelta:self.displayLink.duration];
     for (TCParticle *particle in self.particleToViewMap) {
-        CALayer *layer = [self.particleToViewMap objectForKey:particle];
-        layer.frame = TCCenterRect(layer.frame, particle.position);
-        if (CGRectGetMinX(layer.frame) <= 0 || CGRectGetMaxX(layer.frame) >= CGRectGetWidth(self.view.bounds)) {
+        //CALayer *layer = [self.particleToViewMap objectForKey:particle];
+        //layer.frame = TCCenterRect(layer.frame, particle.position);
+        if (CGRectGetMinX(particle.frame) <= 0 || CGRectGetMaxX(particle.frame) >= CGRectGetWidth(self.view.bounds)) {
             particle.velocity = CGPointMake(-particle.velocity.x, particle.velocity.y);
-        } else if (CGRectGetMinY(layer.frame) <= 0 || CGRectGetMaxY(layer.frame) >= CGRectGetHeight(self.view.bounds)) {
+        } else if (CGRectGetMinY(particle.frame) <= 0 || CGRectGetMaxY(particle.frame) >= CGRectGetHeight(self.view.bounds)) {
             particle.velocity = CGPointMake(particle.velocity.x, -particle.velocity.y);
         }
     }

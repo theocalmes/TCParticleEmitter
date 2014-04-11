@@ -60,6 +60,9 @@ CGPoint TCSpreadPoint(CGPoint point) {
 - (TCParticle *)emittNewParticle
 {
     TCParticle *particle = [[TCParticle alloc] init];
+    CGFloat sizeSread = TCSpread(self.particleSizeSpread);
+    particle.bounds = CGRectMake(0, 0, self.particleSize.width + sizeSread, self.particleSize.height +  sizeSread);
+    particle.opacity = self.minOpacity + TCSpread(self.opacitySpread);
     particle.position = TCPointAdd(self.position, TCSpreadPoint(self.positionSpread));
     particle.velocity = TCPointAdd(self.initialVelocity, TCSpreadPoint(self.velocitySpread));
     particle.lifetime = self.particleLifeTime + TCSpread(self.particleLifeTimeSpread);
@@ -77,11 +80,14 @@ CGPoint TCSpreadPoint(CGPoint point) {
     if ([self shouldSpawnNewParticle]) {
         TCParticle *newParticle = [self emittNewParticle];
         [self.liveParticles addObject:newParticle];
-        self.timeSinceLastBirth = 0;
-
-        if (self.delegate) {
-            [self.delegate particleEmitter:self didCreateParticle:newParticle];
+        if ([self.delegate respondsToSelector:@selector(particleEmitter:didEmittParticle:)]) {
+            [self.delegate particleEmitter:self didEmittParticle:newParticle];
         }
+        
+        if (self.superLayer) {
+            [self.superLayer addSublayer:newParticle];
+        }
+        self.timeSinceLastBirth = 0;
     }
     self.timeSinceLastBirth += dt;
 
@@ -102,8 +108,11 @@ CGPoint TCSpreadPoint(CGPoint point) {
     for (TCParticle *particle in self.liveParticles) {
         if (![particle isAlive]) {
             [deadParticles addObject:particle];
-            if (self.delegate) {
-                [self.delegate particleEmitter:self willDestroyParticle:particle];
+            if ([self.delegate respondsToSelector:@selector(particleEmitter:willRemoveParticle:)]) {
+                [self.delegate particleEmitter:self willRemoveParticle:particle];
+            }
+            if (self.superLayer) {
+                [particle removeFromSuperlayer];
             }
         }
     }
