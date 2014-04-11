@@ -49,17 +49,23 @@ CGPoint TCPointMakeWithAngle(CGFloat angle, CGFloat magnitude) {
     return CGPointMake(magnitude * cosf(angle), magnitude * sinf(angle));
 }
 
-CGPoint TCRectCenter(CGRect rect)
-{
+CGPoint TCRectCenter(CGRect rect) {
     return CGPointMake(CGRectGetMidX(rect), CGRectGetMidY(rect));
 }
 
-CGRect TCCenterRect(CGRect rect, CGPoint center)
-{
+CGRect TCCenterRect(CGRect rect, CGPoint center) {
     CGRect r = CGRectMake(center.x - rect.size.width/2.0,
                           center.y - rect.size.height/2.0,
                           rect.size.width,
                           rect.size.height);
     return r;
+}
+
+float TCSpread(float spread){
+    return spread - drand48() * spread * 2;
+}
+
+CGPoint TCSpreadPoint(CGPoint point) {
+    return CGPointMake(TCSpread(point.x), TCSpread(point.y));
 }
 

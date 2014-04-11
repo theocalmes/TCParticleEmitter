@@ -24,7 +24,7 @@
 
     TCGravityEmitterViewController *viewController3 = [[TCGravityEmitterViewController alloc] init];
 
-    [self.window setRootViewController:viewController3];
+    [self.window setRootViewController:viewController2];
 
 
     [self.window makeKeyAndVisible];

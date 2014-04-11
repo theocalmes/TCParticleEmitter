@@ -11,13 +11,13 @@
 #import "TCParticle.h"
 #import "TCGravityField.h"
 #import "TCUnderwaterField.h"
+#import "TCPointAdditions.h"
+#import "TCBubbleParticle.h"
 
 @interface TCBubbleEmitterViewController ()
 
-@property (nonatomic, strong) NSMapTable *particleToViewMap;
 @property (nonatomic, strong) TCParticleEmitter *emitter;
 @property (nonatomic, strong) CADisplayLink *displayLink;
-@property (nonatomic, strong) UIImage *particleImage;
 
 @end
 
@@ -29,7 +29,6 @@
 {
     self = [super init];
     if (self) {
-        _particleToViewMap = [NSMapTable strongToStrongObjectsMapTable];
         _displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(update)];
     }
 
@@ -57,30 +56,26 @@
 
 #pragma mark - Getters
 
-- (UIImage *)particleImage
-{
-    if (!_particleImage) {
-        _particleImage = [UIImage imageNamed:@"Circumventure-Sprits"];
-    }
-
-    return _particleImage;
-}
-
 - (TCParticleEmitter *)emitter
 {
     if (!_emitter) {
         _emitter = [[TCParticleEmitter alloc] init];
+        _emitter.particleClass = [TCBubbleParticle class];
+        _emitter.superLayer = self.view.layer;
         _emitter.position = CGPointMake(self.view.center.x, self.view.frame.size.height - 30);
-        _emitter.delegate = self;
 
         TCUnderwaterField *underwaterField = [[TCUnderwaterField alloc] init];
         _emitter.fields = @[underwaterField];
         _emitter.initialVelocity = CGPointMake(0, 3);
-        _emitter.birthRate = 0.15;
+        _emitter.birthRate = 0.001;
         _emitter.particleLifeTime = 8;
-        _emitter.maxParticles = 200;
+        _emitter.maxParticles = 2000;
         _emitter.velocitySpread = CGPointMake(0, 5);
-        _emitter.positionSpread = CGPointMake(7, 4);
+        _emitter.positionSpread = CGPointMake(100, 4);
+        _emitter.particleSize = CGSizeMake(12, 12);
+        _emitter.particleSizeSpread = 8;
+        _emitter.minOpacity = 0.4;
+        _emitter.opacitySpread = 0.6;
     }
 
     return _emitter;
@@ -122,9 +117,7 @@
 - (void)update
 {
     [self.emitter updateEmitterWithTimeDelta:self.displayLink.duration];
-    for (TCParticle *particle in self.particleToViewMap) {
-        //CALayer *layer = [self.particleToViewMap objectForKey:particle];
-        //layer.frame = TCCenterRect(layer.frame, particle.position);
+    for (TCParticle *particle in [self.emitter particles]) {
         if (CGRectGetMinX(particle.frame) <= 0 || CGRectGetMaxX(particle.frame) >= CGRectGetWidth(self.view.bounds)) {
             particle.velocity = CGPointMake(-particle.velocity.x, particle.velocity.y);
         } else if (CGRectGetMinY(particle.frame) <= 0 || CGRectGetMaxY(particle.frame) >= CGRectGetHeight(self.view.bounds)) {
@@ -133,38 +126,12 @@
     }
 }
 
-#pragma mark - TCParticleEmitterDelegate
-
-- (void)particleEmitter:(TCParticleEmitter *)emitter didCreateParticle:(TCParticle *)particle
-{
-    float size = 15 + TCSpread(8.0);
-    float minOpacity = 0.4;
-
-    CALayer *layer = [[CALayer alloc] init];
-    layer.contents = (__bridge id)([self.particleImage CGImage]);
-    layer.opacity = minOpacity + fabsf(TCSpread(1.0 - minOpacity));
-    layer.frame = TCCenterRect(CGRectMake(0, 0, size, size), particle.position);
-
-    [self.particleToViewMap setObject:layer forKey:particle];
-
-    [self addShakeAnimationToLayer:layer];
-
-    [self.view.layer addSublayer:layer];
-}
-
-- (void)particleEmitter:(TCParticleEmitter *)emitter willDestroyParticle:(TCParticle *)particle
-{
-    CALayer *layer = [self.particleToViewMap objectForKey:particle];
-    [layer removeFromSuperlayer];
-    [self.particleToViewMap removeObjectForKey:particle];
-}
-
 #pragma mark - User Interaction
 
 - (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
 {
     if (motion == UIEventSubtypeMotionShake) {
-        for (TCParticle *particle in self.particleToViewMap) {
+        for (TCParticle *particle in [self.emitter particles]) {
             particle.velocity = TCPointAdd(particle.velocity, TCSpreadPoint(CGPointMake(30, 30)));
         }
     }
@@ -173,9 +140,8 @@
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     CGPoint point = [touches.anyObject locationInView:self.view];
-    for (TCParticle *particle in self.particleToViewMap) {
-        CALayer *layer = [self.particleToViewMap objectForKey:particle];
-        if (CGRectContainsPoint(layer.frame, point)) {
+    for (TCParticle *particle in [self.emitter particles]) {
+        if (CGRectContainsPoint(particle.frame, point)) {
             particle.lifetime = 0;
         }
     }

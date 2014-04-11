@@ -14,7 +14,7 @@ static CGImageRef _bubbleImageRef;
 
 + (void)initialize
 {
-    _bubbleImageRef = [[UIImage imageNamed:@"Circumventure-Sprits"] CGImage];
+    _bubbleImageRef = [[UIImage imageNamed:@"bubble"] CGImage];
 }
 
 - (instancetype)init

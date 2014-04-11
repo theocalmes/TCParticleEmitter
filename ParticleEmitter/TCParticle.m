@@ -24,6 +24,7 @@
         _acceleration = CGPointZero;
         _timeAlive = 0;
         _lifetime = 10;
+        [self setActions:@{@"position": [NSNull null]}];
     }
     return self;
 }

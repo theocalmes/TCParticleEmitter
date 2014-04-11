@@ -22,3 +22,7 @@ CGPoint TCPointMakeWithAngle(CGFloat angle, CGFloat magnitude);
 
 CGPoint TCRectCenter(CGRect rect);
 CGRect TCCenterRect(CGRect rect, CGPoint center);
+
+float TCSpread(float spread);
+
+CGPoint TCSpreadPoint(CGPoint point);

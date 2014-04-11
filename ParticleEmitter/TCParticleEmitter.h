@@ -19,6 +19,8 @@
 
 @interface TCParticleEmitter : NSObject
 
+@property Class particleClass;
+
 @property (strong) NSArray *fields;
 @property (strong, readonly) NSArray *particles;
 @property (weak) id<TCParticleEmitterDelegate> delegate;

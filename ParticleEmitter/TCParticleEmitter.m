@@ -9,6 +9,7 @@
 #import "TCParticleEmitter.h"
 #import "TCParticle.h"
 #import "TCField.h"
+#import "TCPointAdditions.h"
 
 @interface TCParticleEmitter ()
 
@@ -16,14 +17,6 @@
 @property NSTimeInterval timeSinceLastBirth;
 
 @end
-
-float TCSpread(float spread) {
-    return spread - drand48() * spread * 2;
-}
-
-CGPoint TCSpreadPoint(CGPoint point) {
-    return CGPointMake(TCSpread(point.x), TCSpread(point.y));
-}
 
 @implementation TCParticleEmitter
 
@@ -40,6 +33,7 @@ CGPoint TCSpreadPoint(CGPoint point) {
         _birthRate = 1;
         _particleLifeTime = 100;
         _particleLifeTimeSpread = 0;
+        _particleClass = [TCParticle class];
     }
 
     return self;
@@ -59,13 +53,19 @@ CGPoint TCSpreadPoint(CGPoint point) {
 
 - (TCParticle *)emittNewParticle
 {
-    TCParticle *particle = [[TCParticle alloc] init];
+    TCParticle *particle = [[self.particleClass alloc] init];
+
     CGFloat sizeSread = TCSpread(self.particleSizeSpread);
     particle.bounds = CGRectMake(0, 0, self.particleSize.width + sizeSread, self.particleSize.height +  sizeSread);
+
     particle.opacity = self.minOpacity + TCSpread(self.opacitySpread);
     particle.position = TCPointAdd(self.position, TCSpreadPoint(self.positionSpread));
     particle.velocity = TCPointAdd(self.initialVelocity, TCSpreadPoint(self.velocitySpread));
     particle.lifetime = self.particleLifeTime + TCSpread(self.particleLifeTimeSpread);
+
+    if (self.superLayer) {
+        [self.superLayer addSublayer:particle];
+    }
 
     return particle;
 }
@@ -80,12 +80,9 @@ CGPoint TCSpreadPoint(CGPoint point) {
     if ([self shouldSpawnNewParticle]) {
         TCParticle *newParticle = [self emittNewParticle];
         [self.liveParticles addObject:newParticle];
+
         if ([self.delegate respondsToSelector:@selector(particleEmitter:didEmittParticle:)]) {
             [self.delegate particleEmitter:self didEmittParticle:newParticle];
-        }
-        
-        if (self.superLayer) {
-            [self.superLayer addSublayer:newParticle];
         }
         self.timeSinceLastBirth = 0;
     }

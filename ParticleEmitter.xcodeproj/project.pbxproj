@@ -27,14 +27,13 @@
 		E4481F1C18E0DC5F00B84F52 /* TCGravityEmitterView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4481F1B18E0DC5F00B84F52 /* TCGravityEmitterView.m */; };
 		E46F196A18DB698000A2161A /* TCPressureField.m in Sources */ = {isa = PBXBuildFile; fileRef = E46F196918DB698000A2161A /* TCPressureField.m */; };
 		E46F197118DB90A400A2161A /* underwater_field.png in Resources */ = {isa = PBXBuildFile; fileRef = E46F197018DB90A400A2161A /* underwater_field.png */; };
-		E473428118DCD26B0072BA53 /* Circumventure-Sprits.png in Resources */ = {isa = PBXBuildFile; fileRef = E473428018DCD26B0072BA53 /* Circumventure-Sprits.png */; };
+		E473428118DCD26B0072BA53 /* bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = E473428018DCD26B0072BA53 /* bubble.png */; };
 		E473428718DCD36E0072BA53 /* TCBubbleEmitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E473428618DCD36E0072BA53 /* TCBubbleEmitterViewController.m */; };
 		E473428A18DCE1740072BA53 /* TCUnderwaterField.m in Sources */ = {isa = PBXBuildFile; fileRef = E473428918DCE1740072BA53 /* TCUnderwaterField.m */; };
 		E49335E718E34500001672E1 /* TCImagePressureFieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = E49335E618E34500001672E1 /* TCImagePressureFieldView.m */; };
 		E49335EC18E3496B001672E1 /* TCImageFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E49335EB18E3496B001672E1 /* TCImageFieldViewController.m */; };
 		E49335FF18E3575C001672E1 /* TCGravityEmitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E49335FE18E3575C001672E1 /* TCGravityEmitterViewController.m */; };
 		E4FB606718E63B9600160346 /* TCBubbleParticle.m in Sources */ = {isa = PBXBuildFile; fileRef = E4FB606618E63B9600160346 /* TCBubbleParticle.m */; };
-		E4FB606B18E63C0C00160346 /* TCGravityParticle.m in Sources */ = {isa = PBXBuildFile; fileRef = E4FB606A18E63C0C00160346 /* TCGravityParticle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,7 +79,7 @@
 		E46F196818DB698000A2161A /* TCPressureField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPressureField.h; sourceTree = "<group>"; };
 		E46F196918DB698000A2161A /* TCPressureField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPressureField.m; sourceTree = "<group>"; };
 		E46F197018DB90A400A2161A /* underwater_field.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = underwater_field.png; sourceTree = "<group>"; };
-		E473428018DCD26B0072BA53 /* Circumventure-Sprits.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Circumventure-Sprits.png"; sourceTree = "<group>"; };
+		E473428018DCD26B0072BA53 /* bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubble.png; sourceTree = "<group>"; };
 		E473428518DCD36E0072BA53 /* TCBubbleEmitterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCBubbleEmitterViewController.h; sourceTree = "<group>"; };
 		E473428618DCD36E0072BA53 /* TCBubbleEmitterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCBubbleEmitterViewController.m; sourceTree = "<group>"; };
 		E473428818DCE1740072BA53 /* TCUnderwaterField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCUnderwaterField.h; sourceTree = "<group>"; };
@@ -93,8 +92,6 @@
 		E49335FE18E3575C001672E1 /* TCGravityEmitterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCGravityEmitterViewController.m; sourceTree = "<group>"; };
 		E4FB606518E63B9600160346 /* TCBubbleParticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCBubbleParticle.h; sourceTree = "<group>"; };
 		E4FB606618E63B9600160346 /* TCBubbleParticle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCBubbleParticle.m; sourceTree = "<group>"; };
-		E4FB606918E63C0C00160346 /* TCGravityParticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCGravityParticle.h; sourceTree = "<group>"; };
-		E4FB606A18E63C0C00160346 /* TCGravityParticle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCGravityParticle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,7 +164,7 @@
 				E41045F918DA08C500B111C0 /* TCAppDelegate.m */,
 				E41045FB18DA08C500B111C0 /* Images.xcassets */,
 				E46F197018DB90A400A2161A /* underwater_field.png */,
-				E473428018DCD26B0072BA53 /* Circumventure-Sprits.png */,
+				E473428018DCD26B0072BA53 /* bubble.png */,
 				E41045F018DA08C500B111C0 /* Supporting Files */,
 			);
 			path = ParticleEmitter;
@@ -265,8 +262,6 @@
 			children = (
 				E4FB606518E63B9600160346 /* TCBubbleParticle.h */,
 				E4FB606618E63B9600160346 /* TCBubbleParticle.m */,
-				E4FB606918E63C0C00160346 /* TCGravityParticle.h */,
-				E4FB606A18E63C0C00160346 /* TCGravityParticle.m */,
 			);
 			name = Particles;
 			sourceTree = "<group>";
@@ -350,7 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E41045F418DA08C500B111C0 /* InfoPlist.strings in Resources */,
-				E473428118DCD26B0072BA53 /* Circumventure-Sprits.png in Resources */,
+				E473428118DCD26B0072BA53 /* bubble.png in Resources */,
 				E46F197118DB90A400A2161A /* underwater_field.png in Resources */,
 				E41045FC18DA08C500B111C0 /* Images.xcassets in Resources */,
 			);
@@ -412,7 +407,6 @@
 				E473428A18DCE1740072BA53 /* TCUnderwaterField.m in Sources */,
 				E41045F618DA08C500B111C0 /* main.m in Sources */,
 				E410462318DA34E600B111C0 /* TCParticleEmitter.m in Sources */,
-				E4FB606B18E63C0C00160346 /* TCGravityParticle.m in Sources */,
 				E4FB606718E63B9600160346 /* TCBubbleParticle.m in Sources */,
 				E49335FF18E3575C001672E1 /* TCGravityEmitterViewController.m in Sources */,
 				E410462A18DA3CD400B111C0 /* TCGravityField.m in Sources */,
