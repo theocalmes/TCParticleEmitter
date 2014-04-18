@@ -11,7 +11,7 @@
 @class TCParticle, TCParticleEmitter;
 
 @protocol TCParticleEmitterDelegate <NSObject>
-
+@optional
 - (void)particleEmitter:(TCParticleEmitter *)particleEmitter didEmittParticle:(TCParticle *)particle;
 - (void)particleEmitter:(TCParticleEmitter *)particleEmitter willRemoveParticle:(TCParticle *)particle;
 

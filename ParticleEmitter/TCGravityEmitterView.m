@@ -62,12 +62,15 @@
 
     [[UIColor blueColor] setFill];
     for (TCGravityField *field in self.particleEmitter.fields) {
-        CGContextFillEllipseInRect(ctx, TCCenterRect(CGRectMake(0, 0, 10 * field.mass / 500, 10 * field.mass / 500), field.position));
+        CGFloat fieldSize = 10 * field.mass / 500;
+        CGRect fieldRect = TCCenterRect(CGRectMake(0, 0, fieldSize, fieldSize), field.position);
+        CGContextFillEllipseInRect(ctx, fieldRect);
     }
 
     [[UIColor redColor] setFill];
     for (TCParticle *particle in self.particleEmitter.particles) {
-        CGContextFillEllipseInRect(ctx, TCCenterRect(CGRectMake(0, 0, 3, 3), particle.position));
+        CGRect particleRect = TCCenterRect(CGRectMake(0, 0, 3, 3), particle.position);
+        CGContextFillEllipseInRect(ctx, particleRect);
     }
 }
 

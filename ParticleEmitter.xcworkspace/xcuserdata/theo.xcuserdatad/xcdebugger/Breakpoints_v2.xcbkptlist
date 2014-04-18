@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ParticleEmitter/TCBubbleEmitterViewController.m"
-            timestampString = "418932047.249834"
+            timestampString = "419545435.106522"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "121"
-            endingLineNumber = "121"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
             landmarkName = "-update"
             landmarkType = "5">
          </BreakpointContent>

@@ -14,7 +14,7 @@
 #import "TCPointAdditions.h"
 #import "TCBubbleParticle.h"
 
-@interface TCBubbleEmitterViewController ()
+@interface TCBubbleEmitterViewController () <TCParticleEmitterDelegate>
 
 @property (nonatomic, strong) TCParticleEmitter *emitter;
 @property (nonatomic, strong) CADisplayLink *displayLink;
@@ -62,10 +62,12 @@
         _emitter = [[TCParticleEmitter alloc] init];
         _emitter.particleClass = [TCBubbleParticle class];
         _emitter.superLayer = self.view.layer;
+        _emitter.delegate = self;
         _emitter.position = CGPointMake(self.view.center.x, self.view.frame.size.height - 30);
 
         TCUnderwaterField *underwaterField = [[TCUnderwaterField alloc] init];
         _emitter.fields = @[underwaterField];
+
         _emitter.initialVelocity = CGPointMake(0, 3);
         _emitter.birthRate = 0.001;
         _emitter.particleLifeTime = 8;
@@ -91,7 +93,7 @@
     CATransform3D t2 = CATransform3DScale (layer.transform, 0.9, 1, 1);
     CATransform3D t3 = CATransform3DScale (layer.transform, 1, 1, 1);
     CATransform3D t4 = CATransform3DScale (layer.transform, 1.0, 0.9, 1.0);
-    CATransform3D t5 = CATransform3DScale (layer.transform, 1, 1, 1);;
+    CATransform3D t5 = CATransform3DScale (layer.transform, 1, 1, 1);
 
     NSArray *boundsValues = @[[NSValue valueWithCATransform3D:t1], [NSValue valueWithCATransform3D:t2], [NSValue valueWithCATransform3D:t3], [NSValue valueWithCATransform3D:t4], [NSValue valueWithCATransform3D:t5]];
 
@@ -150,6 +152,13 @@
 - (BOOL)canBecomeFirstResponder
 {
     return YES;
+}
+
+#pragma mark - TCParticleEmitterDelegate
+
+- (void)particleEmitter:(TCParticleEmitter *)particleEmitter didEmittParticle:(TCParticle *)particle
+{
+    [self addShakeAnimationToLayer:particle];
 }
 
 @end
